@@ -5,8 +5,6 @@ backend:
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-site_url: https://darling-panda-412291.netlify.app
-
 collections:
   - name: "news"
     label: "News"
@@ -14,5 +12,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Inhalt", name: "body", widget: "markdown" }
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Text", name: "body", widget: "markdown"}
