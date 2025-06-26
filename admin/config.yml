@@ -1,0 +1,16 @@
+backend
+  name git-gateway
+  branch main
+
+media_folder assetsuploads
+public_folder assetsuploads
+
+collections
+  - name posts
+    label Beiträge
+    folder posts
+    create true
+    slug {{slug}}
+    fields
+      - { label Titel, name title, widget string }
+      - { label Text, name body, widget markdown }
